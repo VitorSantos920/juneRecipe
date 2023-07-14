@@ -26,9 +26,8 @@ globalCss({
   '@font-face': {
     fontFamily: 'Source Serif Pro',
     src: 'url(src/fonts/SourceSerifPro-Bold.otf)',
+    fontWeight: '',
   },
 
-  body: {
-    backgroundColor: '$bgPrimary',
-  },
+  '.flex': { display: 'flex' },
 })();
