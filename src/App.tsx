@@ -1,6 +1,6 @@
 import {
-  // Basket,
-  // CookingPot,
+  Basket,
+  CookingPot,
   MinusCircle,
   PlusCircle,
 } from '@phosphor-icons/react';
@@ -10,6 +10,7 @@ import { Hero } from './styles/Hero';
 import { Content } from './styles/Content';
 import { Portions } from './styles/Portions';
 import { Prices } from './styles/Prices';
+import { Preparation } from './styles/Preparation';
 
 export default function App() {
   const [quantity, setquantity] = useState(0);
@@ -71,7 +72,58 @@ export default function App() {
             </Prices>
           </Content>
         </Hero>
-        <section className="preparation"></section>
+
+        <Preparation className="preparation flex">
+          <div className="preparation__ingredient">
+            <h2 className="ingredient__title">
+              <Basket fill="#FEECE0" weight="bold" />
+              Ingredientes
+            </h2>
+            <ul className="ingredient__ingredients-list">
+              <li className="ingredient__ingredient-name">
+                1 espiga de milho verde
+              </li>
+
+              <li className="ingredient__ingredient-name">
+                1 colher de sopa de açúcar
+              </li>
+
+              <li className="ingredient__ingredient-name">
+                1 colher de sopa de manteiga
+              </li>
+
+              <li className="ingredient__ingredient-name">Sal a gosto</li>
+
+              <li className="ingredient__ingredient-name">
+                Palha de milho (para embrulhar)
+              </li>
+            </ul>
+          </div>
+
+          <div className="preparation__mode">
+            <h2 className="preparation__title">
+              <CookingPot fill="#FEECE0" weight="bold" />
+              Modo de prepararo
+            </h2>
+            <ol className="preparation__preparation-list">
+              <li className="preparation__preparation-item">
+                Descasque a espiga de milho e corte os grãos.
+              </li>
+              <li className="preparation__preparation-item">
+                Bata o milho, açúcar, manteiga e sal no liquidificador.
+              </li>
+              <li className="preparation__preparation-item">
+                Coloque a massa nas palhas de milho e feche bem.
+              </li>
+              <li className="preparation__preparation-item">
+                Cozinhe em água fervente por cerca de 40 minutos.
+              </li>
+              <li className="preparation__preparation-item">
+                Deixe esfriar e sirva.
+              </li>
+            </ol>
+          </div>
+        </Preparation>
       </main>
     </div>
   );
