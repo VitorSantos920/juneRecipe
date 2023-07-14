@@ -5,12 +5,13 @@ import {
   PlusCircle,
 } from '@phosphor-icons/react';
 
-import { useState } from 'react';
-import { Hero } from './styles/Hero';
 import { Content } from './styles/Content';
+import { Hero } from './styles/Hero';
 import { Portions } from './styles/Portions';
-import { Prices } from './styles/Prices';
 import { Preparation } from './styles/Preparation';
+import { Prices } from './styles/Prices';
+
+import { useState } from 'react';
 
 export default function App() {
   const [quantity, setquantity] = useState(0);

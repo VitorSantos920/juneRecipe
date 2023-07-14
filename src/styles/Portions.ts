@@ -9,8 +9,8 @@ export const Portions = styled('div', {
 
   small: {
     color: '$textPrimaryLighter',
-    fontSize: '1.3rem',
     fontFamily: '$primary',
+    fontSize: '1.3rem',
   },
 
   button: {
@@ -20,8 +20,8 @@ export const Portions = styled('div', {
   },
 
   span: {
-    fontSize: '1.3rem',
     color: '$textPrimaryLighter',
+    fontSize: '1.3rem',
   },
 
   svg: {
